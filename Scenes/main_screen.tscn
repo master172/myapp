@@ -1,0 +1,70 @@
+[gd_scene load_steps=3 format=3 uid="uid://pghnupa2lbgs"]
+
+[ext_resource type="Script" uid="uid://ccld4mi4eii8y" path="res://Scenes/main_screen.gd" id="1_p8vjv"]
+[ext_resource type="Script" uid="uid://ckdaxrru5cw33" path="res://Scenes/scene_switcher.gd" id="2_b1vw1"]
+
+[node name="MainScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_p8vjv")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0.896836, 0.778891, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 44.0
+offset_top = 323.0
+offset_right = -44.0
+offset_bottom = -90.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScoreLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 32
+text = "The quiz Game
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Open" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 32
+text = "Open"
+
+[node name="Quit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 32
+text = "Quit"
+
+[node name="SceneSwitcher" type="Node" parent="."]
+script = ExtResource("2_b1vw1")
+
+[connection signal="file_found" from="." to="SceneSwitcher" method="_on_main_screen_file_found"]
+[connection signal="pressed" from="VBoxContainer/Open" to="." method="_on_open_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="QuestionList" load_steps=8 format=3 uid="uid://b0kbqb48haqnw"]
+
+[ext_resource type="Script" uid="uid://brj6j5h45cm20" path="res://resoruces/Question.gd" id="1_owymc"]
+[ext_resource type="Resource" uid="uid://bkawfw63imla8" path="res://Data/1.tres" id="2_pj8ev"]
+[ext_resource type="Script" uid="uid://cflkrippm70b7" path="res://resoruces/QuestionList.gd" id="2_ts6ow"]
+[ext_resource type="Resource" uid="uid://dkijaofvg601l" path="res://Data/2.tres" id="3_0brhd"]
+[ext_resource type="Resource" uid="uid://dw8qf6lc164xn" path="res://Data/3.tres" id="4_adhrm"]
+[ext_resource type="Resource" uid="uid://32johg68jp6c" path="res://Data/4.tres" id="5_adhrm"]
+[ext_resource type="Resource" uid="uid://dxpx8pag64vcg" path="res://Data/5.tres" id="6_l8u88"]
+
+[resource]
+script = ExtResource("2_ts6ow")
+questions = Array[ExtResource("1_owymc")]([ExtResource("2_pj8ev"), ExtResource("3_0brhd"), ExtResource("4_adhrm"), ExtResource("5_adhrm"), ExtResource("6_l8u88")])
+metadata/_custom_type_script = "uid://cflkrippm70b7"

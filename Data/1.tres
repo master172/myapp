@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://bkawfw63imla8"]
+
+[ext_resource type="Script" uid="uid://brj6j5h45cm20" path="res://resoruces/Question.gd" id="1_n77fd"]
+
+[resource]
+script = ExtResource("1_n77fd")
+question = "What is the color of the night"
+answer = 1
+options = Array[String](["Black", "Sanguine", "Red", "Blue"])
+metadata/_custom_type_script = "uid://brj6j5h45cm20"

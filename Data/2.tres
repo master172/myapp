@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://dkijaofvg601l"]
+
+[ext_resource type="Script" uid="uid://brj6j5h45cm20" path="res://resoruces/Question.gd" id="1_x5vn3"]
+
+[resource]
+script = ExtResource("1_x5vn3")
+question = "What is the music of life"
+answer = 2
+options = Array[String](["Drums", "Lutes", "Scilence", "Nothing"])
+metadata/_custom_type_script = "uid://brj6j5h45cm20"

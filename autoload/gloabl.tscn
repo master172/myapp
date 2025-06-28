@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpf8fp3gql0ll"]
+
+[ext_resource type="Script" uid="uid://bc2ewxy23mdjp" path="res://autoload/Gloabl.gd" id="1_wo7sx"]
+[ext_resource type="AudioStream" uid="uid://cwfg1tektttp4" path="res://sfx/select.wav" id="2_aunbx"]
+
+[node name="Gloabl" type="Node2D"]
+script = ExtResource("1_wo7sx")
+
+[node name="Select" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_aunbx")

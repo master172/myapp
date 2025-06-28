@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://dxpx8pag64vcg"]
+
+[ext_resource type="Script" uid="uid://brj6j5h45cm20" path="res://resoruces/Question.gd" id="1_keyiu"]
+
+[resource]
+script = ExtResource("1_keyiu")
+question = "What is the gift of death"
+answer = 1
+options = Array[String](["Peace", "Solace", "Mystery", "Change"])
+metadata/_custom_type_script = "uid://brj6j5h45cm20"

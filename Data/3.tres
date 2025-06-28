@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://dw8qf6lc164xn"]
+
+[ext_resource type="Script" uid="uid://brj6j5h45cm20" path="res://resoruces/Question.gd" id="1_qxqko"]
+
+[resource]
+script = ExtResource("1_qxqko")
+question = "What is life's greatest illusion"
+answer = 0
+options = Array[String](["innocence", "money", "power", "time"])
+metadata/_custom_type_script = "uid://brj6j5h45cm20"

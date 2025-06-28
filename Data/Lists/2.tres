@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="QuestionList" load_steps=6 format=3 uid="uid://d26qcio7omh4x"]
+
+[ext_resource type="Script" uid="uid://brj6j5h45cm20" path="res://resoruces/Question.gd" id="1_sq8lw"]
+[ext_resource type="Script" uid="uid://cflkrippm70b7" path="res://resoruces/QuestionList.gd" id="2_rrcgf"]
+
+[sub_resource type="Resource" id="Resource_sq8lw"]
+script = ExtResource("1_sq8lw")
+question = "What is the 4 th planet from the sun"
+answer = 1
+options = Array[String](["Earth", "Mars", "Mercury", "Venus"])
+metadata/_custom_type_script = "uid://brj6j5h45cm20"
+
+[sub_resource type="Resource" id="Resource_rrcgf"]
+script = ExtResource("1_sq8lw")
+question = "What is the color of the sky"
+answer = 2
+options = Array[String](["Red", "Green", "Blue", "Black"])
+metadata/_custom_type_script = "uid://brj6j5h45cm20"
+
+[sub_resource type="Resource" id="Resource_40yow"]
+script = ExtResource("1_sq8lw")
+question = "What is the most loved programming language"
+answer = 0
+options = Array[String](["Rust", "Python", "PHP", "Ruby"])
+metadata/_custom_type_script = "uid://brj6j5h45cm20"
+
+[resource]
+script = ExtResource("2_rrcgf")
+questions = Array[ExtResource("1_sq8lw")]([SubResource("Resource_sq8lw"), SubResource("Resource_rrcgf"), SubResource("Resource_40yow")])
+metadata/_custom_type_script = "uid://cflkrippm70b7"

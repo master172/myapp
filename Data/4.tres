@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://32johg68jp6c"]
+
+[ext_resource type="Script" uid="uid://brj6j5h45cm20" path="res://resoruces/Question.gd" id="1_cq3wh"]
+
+[resource]
+script = ExtResource("1_cq3wh")
+question = "What is the flavor of fear"
+answer = 3
+options = Array[String](["Mirthy", "Lethargic", "Despair", "Sublime"])
+metadata/_custom_type_script = "uid://brj6j5h45cm20"
